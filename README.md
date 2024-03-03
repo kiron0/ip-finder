@@ -1,4 +1,4 @@
-> ## IP Finder - Get your IP address in just a single click
+## IP Finder - Get your IP address in just a single click
 
 ### Endpoints (GET)
 
