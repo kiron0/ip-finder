@@ -24,15 +24,11 @@ const getIP = catchAsync(async (req, res) => {
                     res.send(ip);
           } else if (!format) {
                     res.type('text/html');
-                    res.render('ip', {
-                              ip,
-                              date,
-                    });
+                    res.render('home');
           } else if (format === 'xml') {
                     res.type('application/xml');
                     res.send(`<?xml version="1.0" encoding="UTF-8"?>
-                    <ip>${ip}</ip>
-                    <date>${date}</date>`);
+                    <ip>${ip}</ip>`);
           } else {
                     throw new Error('Invalid format');
           }

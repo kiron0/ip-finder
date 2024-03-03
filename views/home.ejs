@@ -42,19 +42,26 @@
 
 <body class="bg-black">
           <div class="flex flex-col justify-center items-center h-screen">
+                    <div class="avatar mb-8">
+                              <div
+                                        class="w-48 md:w-60 rounded-full p-3 ring ring-accent ring-offset-base-100 ring-offset-2">
+                                        <img src="https://res.cloudinary.com/kirondev/image/upload/v1709446594/icon_aehcmo.png"
+                                                  draggable="false" class="select-none" />
+                              </div>
+                    </div>
                     <h1
-                              class="flex justify-center items-center text-center text-lg md:text-xl lg:text-2xl text-white px-4 md:px-0">
-                              Your IP address is: <span
-                                        class="pl-2 text-accent font-semibold text-lg md:text-xl lg:text-2xl">
-                                        <%= ip %>
-                              </span>
+                              class="flex justify-center items-center text-center text-2xl md:text-3xl lg:text-4xl text-white px-4 md:px-0">
+                              IP Finder
                     </h1>
-                    <h2 class="text-white text-xs md:text-sm mt-4 text-center px-4 md:px-0">
-                              Requested Date: <span class="text-error">
-                                        <%= date %>
-                              </span>
-                    </h2>
-                    <a href="/docs" class="btn btn-xs btn-error text-white mt-4 mb-3">Back</a>
+                    <small class="text-white text-xs md:text-sm mt-4 text-center px-4 md:px-0">
+                              Get your IP address in just a single click. <br> You can use this IP address to track your
+                              location. <br>
+                              Various formats are available for your IP address.
+                    </small>
+                    <a href="/docs" class="btn btn-xs btn-accent text-white mt-4 mb-3">Docs</a>
+                    <span class="text-white text-center mt-[20px]">Dev - <a href="https://toufiqhasankiron.com"
+                                        target="_blank" class="text-accent font-semibold text-md">Toufiq Hasan
+                                        Kiron</a></span>
           </div>
 </body>
 
