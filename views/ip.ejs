@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <!-- HTML Meta Content -->
+          <meta name="description"
+                    content="Get your IP address in just a single click. You can use this IP address to track your location. Various formats are available for your IP address.">
+          <meta author="Toufiq Hasan Kiron" />
+
+          <!-- Google / Search Engine Tags -->
+          <meta itemprop="name" content="Get your IP address in just a single click - IP Finder">
+          <meta itemprop="description"
+                    content="Get your IP address in just a single click. You can use this IP address to track your location. Various formats are available for your IP address.">
+          <meta itemprop="image" content="https://res.cloudinary.com/kirondev/image/upload/v1709446594/icon_aehcmo.png">
+
+          <meta property="og:title" content="Get your IP address in just a single click - IP Finder">
+          <meta property="og:description"
+                    content="Get your IP address in just a single click. You can use this IP address to track your location. Various formats are available for your IP address.">
+          <meta property="og:image"
+                    content="https://res.cloudinary.com/kirondev/image/upload/v1709446594/icon_aehcmo.png">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="keywords" content="IP Finder, IP, IP Address, Find IP, Get IP" />
+
+          <link rel="shortcut icon" href="https://res.cloudinary.com/kirondev/image/upload/v1709446594/icon_aehcmo.png"
+                    type="image/x-icon">
+
+          <script src="https://cdn.tailwindcss.com"></script>
+          <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
+          <title>Get your IP Address in just a single click - IP Finder</title>
+          <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+                    body {
+                              font-family: 'Nunito', sans-serif;
+                    }
+          </style>
+</head>
+
+<body class="bg-black">
+          <div class="flex flex-col justify-center items-center h-screen">
+                    <h1
+                              class="flex justify-center items-center text-center text-lg md:text-xl lg:text-2xl text-white px-4 md:px-0">
+                              Your IP address is: <span
+                                        class="pl-2 text-accent font-semibold text-lg md:text-xl lg:text-2xl">
+                                        <%= ip %>
+                              </span>
+                    </h1>
+                    <h2 class="text-white text-xs md:text-sm mt-4 text-center px-4 md:px-0">
+                              Requested Date: <span class="text-error">
+                                        <%= date %>
+                              </span>
+                    </h2>
+                    <small class="text-white text-xs md:text-sm lg:text-base mt-4 text-center px-4 md:px-0">
+                              Hey, your private information is public now. <br> Haha! 😀 Just kidding.
+                    </small>
+                    <a href="/docs" class="btn btn-xs btn-accent text-white mt-4 mb-3">Docs</a>
+          </div>
+</body>
+
+</html>
